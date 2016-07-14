@@ -1,0 +1,45 @@
+<h1><%= @greeting %> <%= @name %> Welcome to Rails!</h1>
+<p>Today's date is <%= @todays_date %></p>
+<h2>The best fun you can have coding!</h2>
+<br>
+<p>Coder Factory will teach you how.</p>
+<img class="img-circle img-thumbnail" src="http://kinder-time.ru/wp-content/uploads/2012/10/slon.jpg">
+
+<br>
+<a class="btn btn-primary" href="http://google.com" target="_blank">Link to Google</a>
+<br>
+<h3>Animals</h3>
+<ul>
+  <% @animals.each do |animal| %>
+    <li><%= animal %></li>
+  <% end %>
+</ul>
+<h3>Olympic medals</h3>
+<ol>
+  <li>Gold medal</li>
+  <li>Silver medal</li>
+  <li>Bronze medal</li>
+</ol>
+
+<table class="table table-hover">
+  <tr>
+    <td>Name</td>
+    <td>Level</td>
+    <td>PoGo Team</td>
+  </tr>
+  <tr>
+    <td>Pedro</td>
+    <td>6</td>
+    <td>Instinct</td>
+  </tr>
+</table>
+<br><hr>
+<form class="form">
+  <label>Your name:</label>
+  <input type="text" name="name" class="form-control"><br>
+  <label>Your level:</label>
+  <input type="number" name="level" class="form-control"><br>
+  <label>Your team</label>
+  <input type="text" name="team" class="form-control"><br>
+  <input type="submit">
+</form>
